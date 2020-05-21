@@ -1,17 +1,25 @@
 import React from 'react';
-import upperFirst from 'lodash/upperFirst';
 import { DetailPanel, withEditorContext } from 'gg-editor';
 import { Form } from '@ant-design/compatible';
 import { Card, Input } from 'antd'
 
+
+
 const { Item } = Form;
+
+const typeTitle = {
+  node: '节点',
+  edge: '边',
+  'multi': '复合节点',
+  canvas: '画布'
+}
 
 const formItemLayout = {
   labelCol: {
-    span: 5,
+    span: 8,
   },
   wrapperCol: {
-    span: 19,
+    span: 16,
   },
 };
 
@@ -79,14 +87,14 @@ class Panel extends React.Component {
   };
 
   renderCanvasDetail = () => {
-    return <p>Select a node or edge :)</p>;
+    return <p>请在左侧选择一种地图节点 :)</p>;
   };
 
   render() {
     const { type } = this.props;
 
     return (
-      <Card title={upperFirst(type)} bordered={false}>
+      <Card title={typeTitle[type]} bordered={false}>
         {type === 'node' && this.renderNodeDetail()}
         {type === 'edge' && this.renderEdgeDetail()}
         {type === 'multi' && this.renderMultiDetail()}

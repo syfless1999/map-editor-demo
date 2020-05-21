@@ -3,83 +3,53 @@ import { Item, ItemPanel } from 'gg-editor';
 
 export default function index() {
   return (
-    <ItemPanel className="item-panel">
+    <ItemPanel>
+      <h4 className="item-title">库位</h4>
       <Item
         className="item"
+
         model={{
           type: 'circle',
-          size: 50,
-          label: 'circle',
+          size: 80,
+          label: '库位',
         }}
       >
         <img
-          src="https://gw.alicdn.com/tfs/TB1IRuSnRr0gK0jSZFnXXbRRXXa-110-112.png"
-          width="55"
-          height="56"
+          src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf082e669xj30460463yd.jpg"
+          width="100"
+          height="101"
           draggable={false}
           alt="alt"
         />
       </Item>
+      <h4 className="item-title">生产线</h4>
       <Item
         className="item"
         model={{
           type: 'rect',
-          size: [80, 24],
-          label: 'rect',
+          size: [120, 40],
+          label: '生产线',
         }}
       >
         <img
-          src="https://gw.alicdn.com/tfs/TB1reKOnUT1gK0jSZFrXXcNCXXa-178-76.png"
-          width="89"
-          height="38"
+          src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf082mczn8j305004cjr5.jpg"
+          width="120"
           draggable={false}
           alt="alt"
         />
       </Item>
-      <Item
-        className="item"
-        model={{
-          type: 'ellipse',
-          size: [100, 50],
-          label: 'ellipse',
-        }}
-      >
-        <img
-          src="https://gw.alicdn.com/tfs/TB1AvmVnUH1gK0jSZSyXXXtlpXa-216-126.png"
-          width="108"
-          height="63"
-          draggable={false}
-          alt="alt"
-        />
-      </Item>
-      <Item
-        className="item"
-        model={{
-          type: 'diamond',
-          size: [80, 80],
-          label: 'diamond',
-        }}
-      >
-        <img
-          src="https://gw.alicdn.com/tfs/TB1EB9VnNz1gK0jSZSgXXavwpXa-178-184.png"
-          width="89"
-          height="92"
-          draggable={false}
-          alt="alt"
-        />
-      </Item>
+      <h4 className="item-title">仓储点</h4>
       <Item
         className="item"
         model={{
           type: 'triangle',
-          size: [30, 30],
-          label: 'triangle',
+          size: [50, 10],
+          label: '维修点',
         }}
       >
         <img
-          src="https://gw.alicdn.com/tfs/TB12sC2nKH2gK0jSZJnXXaT1FXa-126-156.png"
-          width="63"
-          height="78"
+          src="https://tva1.sinaimg.cn/large/007S8ZIlly1gf082yh9g5j304l04cjr6.jpg"
+          width="93"
           draggable={false}
           alt="alt"
         />
