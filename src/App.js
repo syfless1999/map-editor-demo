@@ -13,7 +13,7 @@ import './index.less';
 
 
 const layoutProps = {
-  title: "JABIL 简易地图编辑器",
+  title: "简易地图编辑器",
   logo: "https://tva1.sinaimg.cn/large/007S8ZIlly1gf0411artnj30500500sh.jpg",
   layout: "topmenu",
   navTheme: 'light',
